@@ -1,19 +1,19 @@
-CC=C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-g++
-LD=C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-ld
-OBJCOPY="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-objcopy"
-OBJDUMP="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-objdump"
-AVRSIZE="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-size"
-OBJISP="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avrdude"
+CC=C:\avr\bin\avr-g++
+LD=C:\avr\bin\avr-ld
+OBJCOPY="C:\avr\bin\avr-objcopy"
+OBJDUMP="C:\avr\bin\avr-objdump"
+AVRSIZE="C:\avr\bin\avr-size"
+OBJISP="C:\avr\bin\avrdude"
 MCU=atmega328p
 PROGRAMMER=arduino
 BAUDRATE=115200
 CFLAGS=-Wall -Wextra  -Wundef -pedantic \
-		-Os  -DF_CPU=16000000UL -mmcu=${MCU} -DBAUD=19200
+		-Os  -DF_CPU=16000000UL -mmcu=${MCU} -DBAUD=19200 -Iinclude
 LDFLAGS=-mmcu=$(MCU)
 PORT=\\\\.\\COM4
-BIN=led_simple
+BIN=CuperAdCcreen
 OUT=${BIN}.hex
-SOURCES = main.cpp
+SOURCES = main.cpp src/millis.cpp src/lcd_driver.cpp src/CompanyAdds.cpp
 
 DEBUG?=1
 
@@ -51,10 +51,10 @@ isp: ${BIN}.hex
 clean:
 	del "$(OUT)"  *.map *.P *.d
 
+
 $(OUTPUTDIR): 
-	@mkdir "$(OUTPUTDIR)"
 	@mkdir "bin"
-	@mkdir "bin\debug"
-	@mkdir "bin\debug\src"
+	@mkdir "bin/debug"
+	@mkdir "bin/debug/src"
 		   	
 .PHONY: clean dirs
