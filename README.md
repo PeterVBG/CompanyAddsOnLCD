@@ -1,3 +1,43 @@
+Description of the assignment:
+
+1. Code is based on: https://github.com/lafftale1999/cpp_embedded_assignment and https://wokwi.com/projects/445497618841194497
+
+2. The program always run while powered on
+
+3. The company adds are shown based on what they have paid:
+    Medelvärde betalat är 4170 kr.
+    1750 sek / 4170 sek = 0.42 ==> motsvarar 3 slots. Antar att ett företag har tre annonser och att alla ska visas en gång. Betyder att 1 slot motsvarar 0.14
+    Company1: 5000/4170=1.20, 8.6 slots ==> 9 slots
+    Company2: 2500/4170=0.60, 4.3 slots ==> 4 slots
+    Company3: 4900/4170=1.18, 8.4 slots ==> 8 slots
+    Company4: 1750/4170=0.42, 2.99 slots ==> 3 slots
+    Company5: 6700/4170=1.61, 11.5 slots ==> 11 slots
+    Totalt antalet slots i varje "Eternal loop" är 35. Av dessa 35 vigs 9 st åt första företaget, 4 åt andra etc. Detta skapar "rättvisa". 
+
+4. The company name is shown for 5 s
+
+5. The add is shown for 10 s
+
+6. The add blinks according to specification
+
+7. The order of how the companies and adds are shown are not based on random values
+
+8. No heap allocation
+
+9.  millis_wait_ms() is used
+
+10. Folder structure according to specification
+
+11. Code separation, every file represents a specific functionality for the program
+
+12. Code delivered via Github
+
+13. Executable .hex 
+
+
+
+
+-----------------------------------------------------
 
 COMPANY AD SCREEN
 
