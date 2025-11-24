@@ -1,4 +1,4 @@
-Description of the assignment:
+**Description of the assignment**
 
 1. Code is based on: https://github.com/lafftale1999/cpp_embedded_assignment and https://wokwi.com/projects/445497618841194497
 
@@ -13,6 +13,7 @@ Description of the assignment:
     Company4: 1750/4170=0.42, 2.99 slots ==> 3 slots
     Company5: 6700/4170=1.61, 11.5 slots ==> 11 slots
     Totalt antalet slots i varje "Eternal loop" är 35. Av dessa 35 vigs 9 st åt första företaget, 4 åt andra etc. Detta skapar "rättvisa". 
+    Detta sätt att göra det på är så klart inte det snyggaste men det fungerar. Jag förstod också att fokus i denna uppgift låg på hanteringar av bitar.
 
 4. The company name is shown for 5 s
 
@@ -20,7 +21,7 @@ Description of the assignment:
 
 6. The add blinks according to specification
 
-7. The order of how the companies and adds are shown are not based on random values
+7. The order of how the companies and adds are shown are not based on random values (based on what's described in bullet 3)
 
 8. No heap allocation
 
@@ -28,18 +29,18 @@ Description of the assignment:
 
 10. Folder structure according to specification
 
-11. Code separation, every file represents a specific functionality for the program
+11. Code separation, every file represents a specific functionality for the program (see files in /src and /include folder)
 
 12. Code delivered via Github
 
 13. Executable .hex 
 
+**Screenshot when .hex file is uploaded to https://wokwi.com/projects/445497618841194497**
+
+<img width="548" height="662" alt="Image" src="https://github.com/user-attachments/assets/6b4fdbdd-5046-4890-a74a-13d5b0a3b4dc" />
 
 
-
------------------------------------------------------
-
-COMPANY AD SCREEN
+**COMPANY AD SCREEN**
 
 You have been tasked with writing the application logic for the Ad Screen used by your company and finishing the driver initialization of the LCD. The company's ad screen prints out the advertiser's name and then their ad message.
 

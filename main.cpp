@@ -84,6 +84,7 @@ int main(void)
             }
 
             //Show company name for 5 seconds, no blinking
+            //The function write_text expects a pointer, see lcd_driver.cpp
             LCD.write_text(compAddsArray[compNbr].getCompanyName());
             millis_wait_ms(5000);
             //Check if the add shall blink

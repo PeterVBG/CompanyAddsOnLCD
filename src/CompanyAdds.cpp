@@ -30,6 +30,11 @@
 
  int CompanyAdds::getPaidAmount() const { return paidAmount; }
 
+ /*
+ companyName is an array. 
+ Function returns a pointer to where companyName is stored in memory. The return value shall be a pointer since write_text (that is the calling function) expects a pointer
+ First const: The function returns a pointer to a constant char. This char cannot be modified. It protects the data from accidental modification by the caller (companyName shall not be changed). It signals that the return value is read-only.
+ Second const: It means the function is a const member function. It cannot modify any member variables of the object, eg. company name cannot be changed*/
  const char* CompanyAdds::getCompanyName() const { return companyName; }
 
  const char* CompanyAdds::getAdd(int i) const
